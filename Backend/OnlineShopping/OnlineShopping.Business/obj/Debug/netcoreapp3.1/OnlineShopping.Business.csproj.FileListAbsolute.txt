@@ -1,0 +1,12 @@
+C:\Users\user\Documents\GitHub\OnlineShopping\OnlineShopping.Business\bin\Debug\netcoreapp3.1\OnlineShopping.Business.deps.json
+C:\Users\user\Documents\GitHub\OnlineShopping\OnlineShopping.Business\bin\Debug\netcoreapp3.1\OnlineShopping.Business.dll
+C:\Users\user\Documents\GitHub\OnlineShopping\OnlineShopping.Business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.csprojAssemblyReference.cache
+C:\Users\user\Documents\GitHub\OnlineShopping\OnlineShopping.Business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\OnlineShopping\OnlineShopping.Business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\OnlineShopping\OnlineShopping.Business\bin\Debug\netcoreapp3.1\OnlineShopping.Business.runtimeconfig.json
+C:\Users\user\Documents\GitHub\OnlineShopping\OnlineShopping.Business\bin\Debug\netcoreapp3.1\OnlineShopping.Business.runtimeconfig.dev.json
+C:\Users\user\Documents\GitHub\OnlineShopping\OnlineShopping.Business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\OnlineShopping\OnlineShopping.Business\bin\Debug\netcoreapp3.1\OnlineShopping.Business.pdb
+C:\Users\user\Documents\GitHub\OnlineShopping\OnlineShopping.Business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\OnlineShopping\OnlineShopping.Business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.dll
+C:\Users\user\Documents\GitHub\OnlineShopping\OnlineShopping.Business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.pdb
