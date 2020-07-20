@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {}
+    "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
+    "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
         "projectName": "OnlineShopping.Common",
-        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
+        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Common\\obj\\",
+        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

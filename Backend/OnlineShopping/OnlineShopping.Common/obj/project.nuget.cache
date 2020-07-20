@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sz5XFogYINLFijlGaOuiX1oGgleiRGQqSptBjLfXYaAIRiJzfjV1rKDqLSiYAa6DggDzW+pyf/E11VpU8jn64w==",
+  "dgSpecHash": "6Dum9tac80F0mNSta6rSrwcDd3yeix+XdRDo7kgNFTqGg70kpBwnSzas9Uh5qXlzR9VNIXACu2kwSOrE2wAB1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
+  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

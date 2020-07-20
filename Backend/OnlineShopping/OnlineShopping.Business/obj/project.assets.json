@@ -8561,11 +8561,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Business\\OnlineShopping.Business.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Business\\OnlineShopping.Business.csproj",
       "projectName": "OnlineShopping.Business",
-      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Business\\OnlineShopping.Business.csproj",
+      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Business\\OnlineShopping.Business.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Business\\obj\\",
+      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8584,8 +8584,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
-              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj"
+            "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj"
             }
           }
         }

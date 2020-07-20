@@ -8587,11 +8587,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping\\OnlineShopping.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping\\OnlineShopping.csproj",
       "projectName": "OnlineShopping",
-      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping\\OnlineShopping.csproj",
+      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping\\OnlineShopping.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping\\obj\\",
+      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8610,11 +8610,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Business\\OnlineShopping.Business.csproj": {
-              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Business\\OnlineShopping.Business.csproj"
+            "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Business\\OnlineShopping.Business.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Business\\OnlineShopping.Business.csproj"
             },
-            "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
-              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj"
+            "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj"
             }
           }
         }

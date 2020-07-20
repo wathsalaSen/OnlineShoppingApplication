@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DIrdOsjn26EajM1TS5i8TjYXRjhhN3UtcuKC+P7Ay0dsjs+3gh/TFSdixkGg/i1Go8zvPjGINh8b2pWXT27dFg==",
+  "dgSpecHash": "kkhfjPokNN6etBE2qBRLmkVkBbMvQeiRhPeEW8TXde5bnNqaFDAtERJ6MbkajTcabxfPlNBZ+jzv8U7mqqzhcQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\OnlineShopping\\OnlineShopping.Business\\OnlineShopping.Business.csproj",
+  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Business\\OnlineShopping.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
