@@ -2,6 +2,21 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2623,30 +2638,11 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "OnlineShopping/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3",
-          "OnlineShopping.Business": "1.0.0",
-          "OnlineShopping.Common": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/OnlineShopping.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/OnlineShopping.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "OnlineShopping.Business/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.6",
           "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.0",
@@ -2662,16 +2658,37 @@
       "OnlineShopping.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.6"
+        },
         "compile": {
           "bin/placeholder/OnlineShopping.Common.dll": {}
         },
         "runtime": {
           "bin/placeholder/OnlineShopping.Common.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
   "libraries": {
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.6": {
+      "sha512": "XT5yph4cdiMbas6FyvVafCKfg1QgPZM7Ssma7aDCG0Ee8JhZMMpXGottBeUC43/lDHCaw8wTq29HOKOTDB41vA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.3.1.6.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
       "sha512": "Y4rs5aMEXY8G7wJo5S3EEt6ltqyOTr/qOeZzfn+hw/fuQj5GppGckMY5psGLETo1U9hcT5MmAhaT5xtusM1b5g==",
       "type": "package",
@@ -8574,11 +8591,6 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "OnlineShopping/1.0.0": {
-      "type": "project",
-      "path": "../OnlineShopping/OnlineShopping.csproj",
-      "msbuildProject": "../OnlineShopping/OnlineShopping.csproj"
-    },
     "OnlineShopping.Business/1.0.0": {
       "type": "project",
       "path": "../OnlineShopping.Business/OnlineShopping.Business.csproj",
@@ -8592,12 +8604,12 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.6",
       "Microsoft.EntityFrameworkCore >= 5.0.0-preview.6.20312.4",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0-preview.6.20312.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.0-preview.6.20312.4",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.0-preview.6.20312.4",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.0",
-      "OnlineShopping >= 1.0.0",
       "OnlineShopping.Business >= 1.0.0",
       "OnlineShopping.Common >= 1.0.0"
     ]
@@ -8637,9 +8649,6 @@
             },
             "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
               "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj"
-            },
-            "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping\\OnlineShopping.csproj": {
-              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping\\OnlineShopping.csproj"
             }
           }
         }
@@ -8653,6 +8662,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[3.1.6, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.0-preview.6.20312.4, )"
@@ -8699,16 +8712,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.VisualStudio.Web.CodeGeneration.Design from 3.1.3 to 3.1.0. Reference the package directly from the project to select a different version. \r\n OnlineShopping.Data -> OnlineShopping -> Microsoft.VisualStudio.Web.CodeGeneration.Design (>= 3.1.3) \r\n OnlineShopping.Data -> Microsoft.VisualStudio.Web.CodeGeneration.Design (>= 3.1.0)",
-      "libraryId": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

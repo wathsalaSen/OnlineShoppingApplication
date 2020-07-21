@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BIroLUJbN0B//1dEWBeELdKF0Xzs2kYtXblqer9SGFs2B1MxYOuvFos/w8jB3mxAlJlnyH942JdaJ75VR2dtIg==",
-  "success": false,
+  "dgSpecHash": "4kclneHQdV+D4NUvpkyzXUj3Cy60Moi7NKsuUQLWsmj0FQFGs2kOJ/IOljYZqK7h8Mdqd+WzBYk0xb/iLfZ0sQ==",
+  "success": true,
   "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.6\\microsoft.aspnetcore.authentication.jwtbearer.3.1.6.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
@@ -166,15 +167,5 @@
     "C:\\Users\\user\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.VisualStudio.Web.CodeGeneration.Design from 3.1.3 to 3.1.0. Reference the package directly from the project to select a different version. \r\n OnlineShopping.Data -> OnlineShopping -> Microsoft.VisualStudio.Web.CodeGeneration.Design (>= 3.1.3) \r\n OnlineShopping.Data -> Microsoft.VisualStudio.Web.CodeGeneration.Design (>= 3.1.0)",
-      "libraryId": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }

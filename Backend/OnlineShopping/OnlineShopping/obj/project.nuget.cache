@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gBQZXXi0JbFo3AGIxa8pmBg78B33XbYN+8NKYhLrtw9f0HUCvlg5/ZDoii9Wi/AYrpeK+XXvtXvoWdP3XPLhEQ==",
+  "dgSpecHash": "ztou0dnnW0lhaCVO8AnnhwAoNLZHARmjkRhoHQMFWAZcCb1QDDtoA9x9GmAvT+Mx8X68d15rMr/VV37sufuqfg==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping\\OnlineShopping.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.6\\microsoft.aspnetcore.authentication.jwtbearer.3.1.6.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",

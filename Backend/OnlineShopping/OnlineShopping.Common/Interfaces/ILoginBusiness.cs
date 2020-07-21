@@ -8,6 +8,6 @@ namespace OnlineShopping.Common.Interfaces
 {
     public interface ILoginBusiness
     {
-        Task<string> LoginUser(UserModel userModel);
+        AuthenticateResponseModel Authenticate(AuthenticateRequestModel model);
     }
 }

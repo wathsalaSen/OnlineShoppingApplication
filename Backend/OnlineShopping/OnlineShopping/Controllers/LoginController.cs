@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OnlineShopping.Common.Interfaces;
@@ -20,10 +21,40 @@ namespace OnlineShopping.Controllers
             _loginBusiness = loginBusiness;
         }
 
-        [Route("login")]
-        public async Task<IActionResult> Login(UserModel user)
+        //[Route("login")]
+        //public async Task<IActionResult> Login(UserModel user)
+        //{
+        //    if (string.IsNullOrEmpty(user.UserName) || string.IsNullOrEmpty(user.Password))
+        //    {
+        //        return BadRequest();
+        //    }
+        //    else
+        //    {
+        //        try
+        //        {
+        //            await _loginBusiness.LoginUser(user).ConfigureAwait(false);
+        //            return Ok();
+        //        }
+        //        catch (Exception)
+        //        {
+        //            return StatusCode(500, "Internal server error");
+        //        }
+        //    }
+        //}
+
+        /// <summary>
+        /// This method is used to authenticate user and will return user details with JWT token. 
+        /// </summary>
+        /// <param name="model">This parameter will receive username of user and password of user</param>
+        /// <returns></returns>
+
+        //[Route("authenticate")]
+        [AllowAnonymous]
+        //[HttpPost]
+        [HttpPost("authenticate")]
+        public IActionResult Authenticate([FromBody]AuthenticateRequestModel model)
         {
-            if (string.IsNullOrEmpty(user.Username) || string.IsNullOrEmpty(user.Password))
+            if (string.IsNullOrEmpty(model.Username) || string.IsNullOrEmpty(model.Password))
             {
                 return BadRequest();
             }
@@ -31,13 +62,24 @@ namespace OnlineShopping.Controllers
             {
                 try
                 {
-                    await _loginBusiness.LoginUser(user).ConfigureAwait(false);
-                    return Ok();
+                    var response = _loginBusiness.Authenticate(model);
+                    if (response == null)
+                        return BadRequest(new { message = "Username or password is incorrect" });
+
+                    return Ok(response);
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     return StatusCode(500, "Internal server error");
                 }
             }
+
+            //var response = _userBusiness.Authenticate(model);
+
+            //if (response == null)
+            //    return BadRequest(new { message = "UserName or password is incorrect" });
+
+            //return Ok(response);
         }
+    }
 }

@@ -13,7 +13,6 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.0-preview.6.20312.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.0",
-          "OnlineShopping": "1.0.0",
           "OnlineShopping.Business": "1.0.0",
           "OnlineShopping.Common": "1.0.0"
         },
@@ -24,11 +23,23 @@
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "dependencies": {
           "System.Text.Encodings.Web": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Razor/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Html.Abstractions": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.AspNetCore.Razor.Language/3.1.0": {
@@ -43,6 +54,12 @@
         "dependencies": {
           "Microsoft.AspNetCore.Html.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Razor": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Runtime.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
         }
       },
       "Microsoft.CodeAnalysis.Analyzers/2.9.4": {},
@@ -695,6 +712,20 @@
       "Microsoft.Win32.SystemEvents/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.19.56404"
+          }
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -1111,6 +1142,26 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.Win32.SystemEvents": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.19.56404"
+          },
+          "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.19.56404"
+          }
         }
       },
       "System.Globalization/4.3.0": {
@@ -1647,6 +1698,12 @@
         "dependencies": {
           "System.Security.AccessControl": "4.7.0",
           "System.Windows.Extensions": "4.7.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Security.Permissions.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.700.19.56404"
+          }
         }
       },
       "System.Security.Principal.Windows/4.7.0": {},
@@ -1712,6 +1769,20 @@
       "System.Windows.Extensions/4.7.0": {
         "dependencies": {
           "System.Drawing.Common": "4.7.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Windows.Extensions.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.700.19.56404"
+          }
         }
       },
       "System.Xml.ReaderWriter/4.3.0": {
@@ -1784,21 +1855,12 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "OnlineShopping/1.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.0"
-        },
-        "runtime": {
-          "OnlineShopping.dll": {}
-        }
-      },
       "OnlineShopping.Business/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.0"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.0",
+          "OnlineShopping.Common": "1.0.0"
         },
         "runtime": {
           "OnlineShopping.Business.dll": {}
@@ -2943,11 +3005,6 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
-    },
-    "OnlineShopping/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "OnlineShopping.Business/1.0.0": {
       "type": "project",
