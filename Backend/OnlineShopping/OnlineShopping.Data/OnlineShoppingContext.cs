@@ -21,7 +21,12 @@ namespace OnlineShopping.Data
 
         public DbSet<User> user { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    //optionsBuilder.UseSqlServer(@"Server=.;Database=OnlineShopping;Trusted_Connection=True;");
+        //}
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //optionsBuilder.UseSqlServer(@"Server=.;Database=OnlineShopping;Trusted_Connection=True;");
         }

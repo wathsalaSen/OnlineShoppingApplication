@@ -266,3 +266,6 @@ C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\Onli
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.dll
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.pdb
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.MvcApplicationPartsAssemblyInfo.cache

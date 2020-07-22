@@ -111,15 +111,15 @@ namespace OnlineShopping
                 return;
             }
 
-            //if (_currentEnvironment.IsDevelopment() && Configuration.GetValue<bool>("UseInMemoryDataBase"))
-            //{
-            //    services.AddDbContext<OnlineShoppingContext>(c => c.UseInMemoryDatabase("OnlineShoppingDBConnection"));
-            //}
-            //else
-            //{
-            //    services.AddDbContext<OnlineShoppingContext>(c =>
-            //       c.UseSqlServer(Configuration.GetConnectionString("OnlineShoppingDBConnection")));
-            //}
+            if (_currentEnvironment.IsDevelopment() && Configuration.GetValue<bool>("UseInMemoryDataBase"))
+            {
+                //services.AddDbContext<OnlineShoppingContext>(c => c.UseInMemoryDatabase("OnlineShoppingDBConnection"));
+            }
+            else
+            {
+                services.AddDbContext<OnlineShoppingContext>(c =>
+                   c.UseSqlServer(Configuration.GetConnectionString("OnlineShoppingDBConnection")));
+            }
         }
     }
 }

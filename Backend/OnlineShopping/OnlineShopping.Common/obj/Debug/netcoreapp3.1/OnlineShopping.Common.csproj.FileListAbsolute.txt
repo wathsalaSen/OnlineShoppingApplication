@@ -15,3 +15,4 @@ C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\Onli
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.AssemblyInfo.cs
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.dll
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.pdb
+C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.csproj.CoreCompileInputs.cache

@@ -37,3 +37,4 @@ C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\Onli
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping.Data\obj\Debug\netcoreapp3.1\OnlineShopping.Data.dll
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping.Data\obj\Debug\netcoreapp3.1\OnlineShopping.Data.pdb
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping.Data\obj\Debug\netcoreapp3.1\OnlineShopping.Data.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping.Data\obj\Debug\netcoreapp3.1\OnlineShopping.Data.csproj.CoreCompileInputs.cache
