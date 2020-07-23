@@ -113,7 +113,7 @@ namespace OnlineShopping
 
             if (_currentEnvironment.IsDevelopment() && Configuration.GetValue<bool>("UseInMemoryDataBase"))
             {
-                //services.AddDbContext<OnlineShoppingContext>(c => c.UseInMemoryDatabase("OnlineShoppingDBConnection"));
+                services.AddDbContext<OnlineShoppingContext>(c => c.UseInMemoryDatabase("OnlineShoppingDBConnection"));
             }
             else
             {

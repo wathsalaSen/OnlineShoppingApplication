@@ -397,6 +397,18 @@
           "build/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/3.1.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.6"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.InMemory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.InMemory.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/5.0.0-preview.6.20312.4": {
         "type": "package",
         "dependencies": {
@@ -2644,8 +2656,9 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.6",
           "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
+          "Microsoft.EntityFrameworkCore.InMemory": "3.1.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.0",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3",
           "OnlineShopping.Common": "1.0.0"
         },
         "compile": {
@@ -2653,13 +2666,18 @@
         },
         "runtime": {
           "bin/placeholder/OnlineShopping.Business.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "OnlineShopping.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.6"
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.6",
+          "Microsoft.EntityFrameworkCore.InMemory": "3.1.6",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3"
         },
         "compile": {
           "bin/placeholder/OnlineShopping.Common.dll": {}
@@ -2677,8 +2695,9 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.6",
           "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
+          "Microsoft.EntityFrameworkCore.InMemory": "3.1.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.0",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3",
           "OnlineShopping.Business": "1.0.0",
           "OnlineShopping.Common": "1.0.0"
         },
@@ -3143,6 +3162,20 @@
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.xml",
         "microsoft.entityframeworkcore.design.5.0.0-preview.6.20312.4.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/3.1.6": {
+      "sha512": "UhoG//6kIno3DYHu2EG/WrLpq+n/em32sEehDEcCY22HvXDWdk7anZ0iKiVyCSe846taZTlTqqrqcR6eqrrARA==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/3.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.3.1.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/5.0.0-preview.6.20312.4": {
@@ -8637,6 +8670,7 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.6",
       "Microsoft.EntityFrameworkCore >= 5.0.0-preview.6.20312.4",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0-preview.6.20312.4",
+      "Microsoft.EntityFrameworkCore.InMemory >= 3.1.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.0-preview.6.20312.4",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.0-preview.6.20312.4",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.3",
@@ -8709,6 +8743,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.0-preview.6.20312.4, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "[3.1.6, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",

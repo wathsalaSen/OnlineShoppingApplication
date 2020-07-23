@@ -14,7 +14,7 @@ export class SignService {
   public currentUser: Observable<User>;
 
   //private baseUrl = 'https://localhost:44313/';
-  private readonly apiPath : string = 'api/Users/authenticate';
+  private readonly apiPath : string = 'api/Login/authenticate';
  
   constructor( private _http : HttpClient) {
     this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));

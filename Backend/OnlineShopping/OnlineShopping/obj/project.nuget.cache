@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ztou0dnnW0lhaCVO8AnnhwAoNLZHARmjkRhoHQMFWAZcCb1QDDtoA9x9GmAvT+Mx8X68d15rMr/VV37sufuqfg==",
+  "dgSpecHash": "SYUssCzrVPSbfhqYj1CHHTuV4R0kjiY39WFUeYW2x/U1GHBhE7kQArhFgJx9ah348YnhKnhV2OgMq9R3SMNHig==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\Assignment\\OnlineShoppingApplication\\Backend\\OnlineShopping\\OnlineShopping\\OnlineShopping.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0-preview.6.20312.4\\microsoft.entityframeworkcore.abstractions.5.0.0-preview.6.20312.4.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.0-preview.6.20312.4\\microsoft.entityframeworkcore.analyzers.5.0.0-preview.6.20312.4.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.0-preview.6.20312.4\\microsoft.entityframeworkcore.design.5.0.0-preview.6.20312.4.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\3.1.6\\microsoft.entityframeworkcore.inmemory.3.1.6.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.0-preview.6.20312.4\\microsoft.entityframeworkcore.relational.5.0.0-preview.6.20312.4.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.0-preview.6.20312.4\\microsoft.entityframeworkcore.sqlserver.5.0.0-preview.6.20312.4.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.0-preview.6.20312.4\\microsoft.entityframeworkcore.tools.5.0.0-preview.6.20312.4.nupkg.sha512",

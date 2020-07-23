@@ -27,6 +27,7 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.6",
           "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
           "Microsoft.EntityFrameworkCore.Design": "5.0.0-preview.6.20312.4",
+          "Microsoft.EntityFrameworkCore.InMemory": "3.1.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.0-preview.6.20312.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3",
@@ -667,6 +668,20 @@
             "assemblyVersion": "5.0.0.0",
             "fileVersion": "5.0.20.31204"
           }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.InMemory/3.1.6": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "assemblyVersion": "3.1.6.0",
+            "fileVersion": "3.100.620.31702"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.InMemory.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/5.0.0-preview.6.20312.4": {
@@ -2228,6 +2243,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.6",
           "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
+          "Microsoft.EntityFrameworkCore.InMemory": "3.1.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3",
           "OnlineShopping.Common": "1.0.0"
@@ -2241,7 +2257,9 @@
       },
       "OnlineShopping.Common/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.6"
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.6",
+          "Microsoft.EntityFrameworkCore.InMemory": "3.1.6",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3"
         },
         "runtime": {
           "OnlineShopping.Common.dll": {}
@@ -2254,6 +2272,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.6",
           "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
+          "Microsoft.EntityFrameworkCore.InMemory": "3.1.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3",
           "OnlineShopping.Business": "1.0.0",
@@ -3940,6 +3959,13 @@
       "sha512": "sha512-HP0UvfyCw3rGnAKL8daKf632p3BGQ3eznjSDcQmcKM47NVCZqmfSshB68h3jg1Hy427BZIiw9BGI7rFhi8DKug==",
       "path": "microsoft.entityframeworkcore.design/5.0.0-preview.6.20312.4",
       "hashPath": "microsoft.entityframeworkcore.design.5.0.0-preview.6.20312.4.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/3.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UhoG//6kIno3DYHu2EG/WrLpq+n/em32sEehDEcCY22HvXDWdk7anZ0iKiVyCSe846taZTlTqqrqcR6eqrrARA==",
+      "path": "microsoft.entityframeworkcore.inmemory/3.1.6",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.3.1.6.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/5.0.0-preview.6.20312.4": {
       "type": "package",
