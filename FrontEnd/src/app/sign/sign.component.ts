@@ -26,8 +26,13 @@ export class SignComponent implements OnInit {
     private router: Router,
 
   ) {
+    // Temporary:
+    this.signService.logout();
+    console.log('use is logged out');
+
     // redirect to home if already logged in
     if (this.signService.currentUserValue) {
+      console.log('use is already logged in');
       this.router.navigate(['/']);
     }
   }
@@ -46,14 +51,14 @@ export class SignComponent implements OnInit {
   get f() { return this.loginForm.controls; }
 
   onSubmit() {
-    this.submitted = true;
-
     // stop here if form is invalid
     if (this.loginForm.invalid) {
       return;
     }
 
+    this.submitted = true;
     this.loading = true;
+
     this.signService.autenticate(this.f.username.value, this.f.password.value)
       .pipe(first())
       .subscribe(

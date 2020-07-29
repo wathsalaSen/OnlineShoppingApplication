@@ -5,12 +5,17 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">  
-    </ul>  
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      <a class="nav-link" href="#">Cart</a>
-      <a class="nav-link" routerLink="/sign" routerLinkActive="active">Login</a>
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <a class="nav-link" href="#">Cart</a>
+    <div *ngIf="!hasSignedIn">
+      <a class="nav-link" routerLink="/sign" routerLinkActive="active">Sign in</a>
+    </div>
+    <div *ngIf="hasSignedIn">
+      <a class="nav-link" routerLink="/sign-out" routerLinkActive="active" (click)="signOut()">Sign out</a>
+    </div>
   </div>
 </nav>
 
