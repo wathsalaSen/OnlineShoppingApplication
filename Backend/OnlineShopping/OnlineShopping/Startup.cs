@@ -40,17 +40,17 @@ namespace OnlineShopping
             services.AddScoped(typeof(ILoginBusiness), typeof(LoginBusiness));
             services.AddScoped(typeof(IAsyncRepository<>), typeof(EfRepository<>));
 
-            services.AddCors(cors =>
-            {
-                cors.AddPolicy(name: AllowSpecificOrigins,
-                builder =>
-                {
-                    builder.WithOrigins("https://localhost:4200", "http://localhost:4200")
-                        .AllowAnyHeader()
-                        .AllowAnyMethod()
-                        .AllowCredentials();
-                });
-            });
+            //services.AddCors(cors =>
+            //{
+            //    cors.AddPolicy(name: AllowSpecificOrigins,
+            //    builder =>
+            //    {
+            //        builder.WithOrigins("https://localhost:4200", "http://localhost:4200")
+            //            .AllowAnyHeader()
+            //            .AllowAnyMethod()
+            //            .AllowCredentials();
+            //    });
+            //});
 
             services.AddControllers();
             //services.AddDbContextPool<OnlineShoppingContext>(Options => Options.UseSqlServer(Configuration.GetConnectionString("OnlineShoppingDBConnection")));
@@ -83,26 +83,26 @@ namespace OnlineShopping
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+        //public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        //{
+        //    if (env.IsDevelopment())
+        //    {
+        //        app.UseDeveloperExceptionPage();
+        //    }
 
-            app.UseHttpsRedirection();
+        //    app.UseHttpsRedirection();
 
-            app.UseRouting();
+        //    app.UseRouting();
 
-            app.UseCors(AllowSpecificOrigins);
+        //    app.UseCors(AllowSpecificOrigins);
 
-            app.UseAuthorization();
+        //    app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
-        }
+        //    app.UseEndpoints(endpoints =>
+        //    {
+        //        endpoints.MapControllers();
+        //    });
+        //}
 
         protected virtual void ConfigureDatabase(IServiceCollection services)
         {
