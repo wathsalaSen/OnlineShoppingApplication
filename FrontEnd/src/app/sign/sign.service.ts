@@ -26,20 +26,20 @@ export class SignService {
     return this.currentUserSubject.value;
   }
 
-  // autenticate(username: string, password: string): Observable<User> {
-  //   return this._http.post<User>('https://localhost:5001/login/authenticate', { username, password }, {
-  //     //return this._http.post<User>(`${environment.apiUrl}${this.apiPath}`, { username, password },{
-  //     headers: new HttpHeaders({
-  //       'Content-Type': 'application/json'
-  //     })
-  //   }).pipe(map(user => {
-  //     // store user details and jwt token in local storage to keep user logged in between page refreshes
-  //     localStorage.setItem('currentUser', JSON.stringify(user));
-  //     this.currentUserSubject.next(user);
-  //     return user;
-  //   }));
-  //   console.log(environment.apiUrl);
-  // }
+  /*
+  autenticate(username: string, password: string): Observable<User> {
+    return this._http.post<User>(`${environment.apiUrl}${this.apiPath}`, { username, password }, {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
+    }).pipe(map(user => {
+      // store user details and jwt token in local storage to keep user logged in between page refreshes
+      localStorage.setItem('currentUser', JSON.stringify(user));
+      this.currentUserSubject.next(user);
+      return user;
+    }));
+    console.log(environment.apiUrl);
+  } */
 
   autenticate(username: string, password: string): Observable<User> {
     let authRequest: AuthRequest = new AuthRequest(username, password);

@@ -28,7 +28,7 @@ export class SignComponent implements OnInit {
   ) {
     // Temporary:
     this.signService.logout();
-    console.log('use is logged out');
+    console.log('user is logged out');
 
     // redirect to home if already logged in
     if (this.signService.currentUserValue) {
