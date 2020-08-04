@@ -3,14 +3,14 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { User } from './user';
 import { Router, ActivatedRoute } from '@angular/router';
 import { first } from 'rxjs/operators';
-import { SignService } from './sign.service';
+import { SignInService } from './signIn.service';
 
 @Component({
-  selector: 'app-sign',
-  templateUrl: './sign.component.html',
-  styleUrls: ['./sign.component.css']
+  selector: 'app-signIn',
+  templateUrl: './signIn.component.html',
+  styleUrls: ['./signIn.component.css']
 })
-export class SignComponent implements OnInit {
+export class SignInComponent implements OnInit {
   loginForm: FormGroup;
   loading = false;
   submitted = false;
@@ -20,19 +20,19 @@ export class SignComponent implements OnInit {
   public UserModel = new User;
 
   constructor(
-    private signService: SignService,
+    private signInService: SignInService,
     private formBuilder: FormBuilder,
     private route: ActivatedRoute,
     private router: Router,
 
   ) {
     // Temporary:
-    this.signService.logout();
+    this.signInService.logout();
     console.log('user is logged out');
 
     // redirect to home if already logged in
-    if (this.signService.currentUserValue) {
-      console.log('use is already logged in');
+    if (this.signInService.currentUserValue) {
+      console.log('user is already logged in');
       this.router.navigate(['/']);
     }
   }
@@ -59,7 +59,7 @@ export class SignComponent implements OnInit {
     this.submitted = true;
     this.loading = true;
 
-    this.signService.autenticate(this.f.username.value, this.f.password.value)
+    this.signInService.autenticate(this.f.username.value, this.f.password.value)
       .pipe(first())
       .subscribe(
         data => {

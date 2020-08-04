@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OnlineShopping.Common.Entities
 {
-    public class BaseEntity
+    public class Class
     {
         public int Id { get; set; }
     }

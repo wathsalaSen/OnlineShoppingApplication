@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace OnlineShopping.Common.Entities
 {
-    public class User : BaseEntity
+    public class User : Class
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

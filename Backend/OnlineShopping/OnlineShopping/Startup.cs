@@ -39,6 +39,7 @@ namespace OnlineShopping
 
             services.AddScoped(typeof(ILoginBusiness), typeof(LoginBusiness));
             services.AddScoped(typeof(IAsyncRepository<>), typeof(EfRepository<>));
+            //services.AddScoped(typeof(IEfRepository), typeof(EfRepository<>));
 
             services.AddCors(cors =>
             {

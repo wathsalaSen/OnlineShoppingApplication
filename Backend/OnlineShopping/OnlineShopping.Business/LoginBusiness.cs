@@ -9,51 +9,81 @@ using System.Threading.Tasks;
 using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 using System.Linq;
+using OnlineShopping.Common.Entities;
+using OnlineShopping.Data;
 
 namespace OnlineShopping.Business
 {
     public class LoginBusiness : ILoginBusiness
     {
 
-        private List<UserModel> _users = new List<UserModel>
-        {  
-            new UserModel { Id = 1, FirstName = "user", LastName = "name", UserName = "test", Password = "test" }
-        };
+        //private List<UserModel> _users = new List<UserModel>
+        //{
+        //    new UserModel { Id = 1, FirstName = "user", LastName = "name", UserName = "test", Password = "test" }
+        //};
 
-        public Task<string> LoginUser(UserModel userModel)
-        {
-            var Result = "success";
-            return Task.FromResult(Result);
-        }
+        //public Task<string> LoginUser(UserModel userModel)
+        //{
+        //    var Result = "success";
+        //    return Task.FromResult(Result);
+        //}
 
         private readonly AppSettingsModel _appSettings;
+        private readonly IAsyncRepository<User> _iAsyncRepository;
 
-        public LoginBusiness(IOptions<AppSettingsModel> appSettings)
+        public LoginBusiness(IOptions<AppSettingsModel> appSettings, IAsyncRepository<User> iAsyncRepository)
         {
             _appSettings = appSettings.Value;
+            this._iAsyncRepository = iAsyncRepository;
         }
 
+        public async Task<List<User>> GetAll()
+        {
+            var persons = await _iAsyncRepository.FindAsync<User>
+                           (x => x.MobileNumber.Equals(123));
+            //return persons.Select(person => new User()).ToList();
+            return persons.Select(p => new User
+            {
+                Id = p.Id,
+                FirstName = p.FirstName,
+                LastName = p.LastName,
+                Address = p.Address,
+                MobileNumber = p.MobileNumber,
+                Email = p.Email,
+                Password = p.Password,
+                UserName = p.UserName
+            }).ToList();         
+        }
         /// <summary>
         /// This method will filter user details from db  
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        public AuthenticateResponseModel Authenticate(AuthenticateRequestModel model)
+        public async Task<AuthenticateResponseModel> Authenticate(AuthenticateRequestModel model)
         {
-            var user = _users.SingleOrDefault(x => x.UserName == model.Username && x.Password == model.Password);
+            try
+            {
+                var user = await this._iAsyncRepository.SingleOrDefaultAsync<User>(x => x.UserName == model.Username && x.Password == model.Password).ConfigureAwait(false);
+                //var user = result.Select(person => new User()).Take(1);
+                //var user = _users.SingleOrDefault(x => x.UserName == model.Username && x.Password == model.Password);
 
-            // return null if user not found
-            if (user == null) return null;
+                // return null if user not found
+                if (user == null) return null;
 
-            // authentication successful so generate jwt token
-            var token = generateJwtToken(user);
+                // authentication successful so generate jwt token
+                var token = generateJwtToken(user);
 
-            return new AuthenticateResponseModel(user, token);
+                return new AuthenticateResponseModel(user, token);
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
         // helper methods
 
-        private string generateJwtToken(UserModel user)
+        private string generateJwtToken(User user)
         {
             // generate token that is valid for 7 days
             var tokenHandler = new JwtSecurityTokenHandler();

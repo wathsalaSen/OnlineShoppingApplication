@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SignService } from '../sign/sign.service';
+import { SignInService } from '../signIn/signIn.service';
 
 @Component({
   selector: 'app-top-navigation',
@@ -9,7 +9,7 @@ import { SignService } from '../sign/sign.service';
 export class TopNavigationComponent implements OnInit {
   public hasSignedIn: boolean = false;
 
-  constructor(private signService: SignService) { }
+  constructor(private signService: SignInService) { }
 
   ngOnInit(): void {
     if (this.signService.currentUserValue) {

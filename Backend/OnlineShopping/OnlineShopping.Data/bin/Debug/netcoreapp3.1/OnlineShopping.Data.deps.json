@@ -15,7 +15,6 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.0-preview.6.20312.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3",
-          "OnlineShopping.Business": "1.0.0",
           "OnlineShopping.Common": "1.0.0"
         },
         "runtime": {
@@ -1807,19 +1806,6 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "OnlineShopping.Business/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.6",
-          "Microsoft.EntityFrameworkCore": "5.0.0-preview.6.20312.4",
-          "Microsoft.EntityFrameworkCore.InMemory": "3.1.6",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-preview.6.20312.4",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3",
-          "OnlineShopping.Common": "1.0.0"
-        },
-        "runtime": {
-          "OnlineShopping.Business.dll": {}
-        }
-      },
       "OnlineShopping.Common/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.6",
@@ -2978,11 +2964,6 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
-    },
-    "OnlineShopping.Business/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "OnlineShopping.Common/1.0.0": {
       "type": "project",

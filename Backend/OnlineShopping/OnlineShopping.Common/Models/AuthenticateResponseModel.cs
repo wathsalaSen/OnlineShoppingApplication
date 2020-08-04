@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OnlineShopping.Common.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,7 +14,7 @@ namespace OnlineShopping.Common.Models
         public string Token { get; set; }
 
 
-        public AuthenticateResponseModel(UserModel user, string token)
+        public AuthenticateResponseModel(User user, string token)
         {
             Id = user.Id;
             FirstName = user.FirstName;

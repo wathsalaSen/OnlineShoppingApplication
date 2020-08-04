@@ -10,7 +10,7 @@ import { AuthRequest } from '../AuthRequest/auth-request';
 @Injectable({
   providedIn: 'root'
 })
-export class SignService {
+export class SignInService {
   private currentUserSubject: BehaviorSubject<User>;
   public currentUser: Observable<User>;
 

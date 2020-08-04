@@ -131,14 +131,15 @@ C:\Users\user\Documents\GitHub\OnlineShopping\OnlineShopping\obj\Debug\netcoreap
 C:\Users\user\Documents\GitHub\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.pdb
 C:\Users\user\Documents\GitHub\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.genruntimeconfig.cache
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\OnlineShopping.exe
-C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\OnlineShopping.deps.json
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\OnlineShopping.runtimeconfig.json
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\OnlineShopping.runtimeconfig.dev.json
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\OnlineShopping.dll
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\OnlineShopping.pdb
+C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
@@ -149,6 +150,7 @@ C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\Onli
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
@@ -257,6 +259,8 @@ C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\Onli
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\OnlineShopping.Common.pdb
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\OnlineShopping.Data.pdb
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.csprojAssemblyReference.cache
+C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.AssemblyInfoInputs.cache
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.AssemblyInfo.cs
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.RazorTargetAssemblyInfo.cache
@@ -266,7 +270,3 @@ C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\Onli
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.dll
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.pdb
 C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.genruntimeconfig.cache
-C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
-C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.csproj.CoreCompileInputs.cache
-C:\Users\user\Documents\GitHub\Assignment\OnlineShoppingApplication\Backend\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.MvcApplicationPartsAssemblyInfo.cache

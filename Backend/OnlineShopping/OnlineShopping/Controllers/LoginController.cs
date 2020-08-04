@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using OnlineShopping.Common.Entities;
 using OnlineShopping.Common.Interfaces;
 using OnlineShopping.Common.Models;
 
@@ -19,6 +20,14 @@ namespace OnlineShopping.Controllers
         public LoginController(ILoginBusiness loginBusiness)
         {
             _loginBusiness = loginBusiness;
+        }
+
+        [HttpGet("users")]
+        public async Task<List<User>> GetAll()
+        {
+            var r = await _loginBusiness.GetAll();
+            return r;
+
         }
 
         //[Route("login")]
@@ -63,14 +72,14 @@ namespace OnlineShopping.Controllers
                 try
                 {
                     var response = _loginBusiness.Authenticate(model);
-                    if (response == null)
-                        return BadRequest(new { message = "Username or password is incorrect" });
+                    //if (response == null)
+                    //    return BadRequest(new { message = "Username or password is incorrect" });
 
                     return Ok(response);
                 }
                 catch (Exception ex)
                 {
-                    return StatusCode(500, "Internal server error");
+                    return StatusCode(500, ex.Message);
                 }
             }
 
@@ -80,6 +89,7 @@ namespace OnlineShopping.Controllers
             //    return BadRequest(new { message = "UserName or password is incorrect" });
 
             //return Ok(response);
+
         }
     }
 }

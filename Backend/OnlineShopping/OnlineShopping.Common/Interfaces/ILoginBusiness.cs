@@ -1,4 +1,5 @@
-﻿using OnlineShopping.Common.Models;
+﻿using OnlineShopping.Common.Entities;
+using OnlineShopping.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,6 +9,7 @@ namespace OnlineShopping.Common.Interfaces
 {
     public interface ILoginBusiness
     {
-        AuthenticateResponseModel Authenticate(AuthenticateRequestModel model);
+        Task<AuthenticateResponseModel> Authenticate(AuthenticateRequestModel model);
+        Task<List<User>> GetAll();
     }
 }

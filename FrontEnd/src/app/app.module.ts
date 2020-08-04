@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductsHomeComponent } from './products-home/products-home.component';
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
-import { SignComponent } from './sign/sign.component';
+import { SignInComponent } from './signIn/signIn.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 
@@ -12,7 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
   declarations: [
     AppComponent,
     TopNavigationComponent,
-    SignComponent
+    SignInComponent
   ],
   imports: [
     BrowserModule,
